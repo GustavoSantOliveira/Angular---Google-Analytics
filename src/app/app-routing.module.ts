@@ -3,13 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AvaliacaoComponent } from './avaliacao/avaliacao.component';
 
 
-const routes: Routes = [
-  {
-    path: 'avaliacao',
-    component: AvaliacaoComponent,
-    data: { title: 'Avaliação' }
-  }
-];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
