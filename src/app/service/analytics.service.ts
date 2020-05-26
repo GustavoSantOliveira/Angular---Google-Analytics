@@ -1,7 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Observable, of, throwError } from 'rxjs';
-import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
-import { catchError, tap, map } from 'rxjs/operators';
 declare let gtag:Function;
 
 @Injectable({
@@ -25,14 +22,5 @@ export class AnalyticsService {
       eventAction: eventAction,
       eventValue: eventValue
     })
-  }
-
-  private handleError<T> (operation = 'operation', result?: T) {
-    return (error: any): Observable<T> => {
-
-      console.error(error);
-
-      return of(result as T);
-    };
   }
 }

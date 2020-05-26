@@ -28,7 +28,7 @@ export class AvaliacaoComponent implements OnInit {
   }
 
   SendAddToCartEvent(){ 
-    this.analyticsService.eventEmitter("add_to_cart", "shop", "cart", "click", 10);
+    this.analyticsService.eventEmitter("add_avaliacao", "avaliacao", "nota", "click", 10);
   } 
 
 }
